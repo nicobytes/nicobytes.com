@@ -1,13 +1,13 @@
 {
   "site": {
-    "title": "EV0 ",
-    "base_url": "https://ev0.gndx.io",
+    "title": "@nicobytes",
+    "base_url": "https://nicobytes.com",
     "base_path": "/",
     "favicon": "/favicon.png",
     "logoLight": "/logoLight.png",
     "logoDark": "/logoDark.png",
     "lang": "en",
-    "description": "EV0 is a free and open-source serverless blog template, built with Astro, Tailwind CSS, and TypeScript.",
+    "description": "I'm a Senior Full-Stack Developer with 10+ years' expertise in development & Tech Management. Recognized by Google as a Developer Expert in Angular & Microsoft as a Most Valuable Professional.",
     "pageSize": 6
   },
   "features": {
@@ -15,12 +15,12 @@
     "dark_mode": true
   },
   "metadata": {
-    "meta_author": "Oscar Barajas @gndx",
-    "meta_description": "EV0 is a free and open-source serverless blog template, built with Astro, Tailwind CSS, and TypeScript."
+    "meta_author": "Nicolas Molina @nicobytes",
+    "meta_description": "I'm a Senior Full-Stack Developer with 10+ years' expertise in development & Tech Management. Recognized by Google as a Developer Expert in Angular & Microsoft as a Most Valuable Professional."
   },
   "author": {
-    "name": "Oscar Barajas Tavares @gndx",
-    "avatar": "https://s3.amazonaws.com/gndx.dev/gndx-astro-avatar.png",
-    "bio": "EV0 is a free and open-source serverless blog template, built with Astro, Tailwind CSS, and TypeScript."
+    "name": "Nicolas Molina @nicobytes",
+    "avatar": "/profile.jpg",
+    "bio": "I'm a Senior Full-Stack Developer with 10+ years' expertise in development & Tech Management. Recognized by Google as a Developer Expert in Angular & Microsoft as a Most Valuable Professional."
   }
 }
