@@ -7,7 +7,7 @@
     "logoLight": "/logoLight.png",
     "logoDark": "/logoDark.png",
     "lang": "en",
-    "description": "I'm a Senior Full-Stack Developer with 10+ years' expertise in development & Tech Management. Recognized by Google as a Developer Expert in Angular & Microsoft as a Most Valuable Professional.",
+    "description": "I'm a Senior Full-Stack Developer with over 10 years of experience in development and tech management. Recognized by Google as a Developer Expert in Angular, and Microsoft awarded me as a Most Valuable Professional.",
     "pageSize": 6
   },
   "features": {
@@ -16,11 +16,11 @@
   },
   "metadata": {
     "meta_author": "Nicolas Molina @nicobytes",
-    "meta_description": "I'm a Senior Full-Stack Developer with 10+ years' expertise in development & Tech Management. Recognized by Google as a Developer Expert in Angular & Microsoft as a Most Valuable Professional."
+    "meta_description": "I'm a Senior Full-Stack Developer with over 10 years of experience in development and tech management. Recognized by Google as a Developer Expert in Angular, and Microsoft awarded me as a Most Valuable Professional."
   },
   "author": {
     "name": "Nicolas Molina @nicobytes",
     "avatar": "/profile.jpg",
-    "bio": "I'm a Senior Full-Stack Developer with 10+ years' expertise in development & Tech Management. Recognized by Google as a Developer Expert in Angular & Microsoft as a Most Valuable Professional."
+    "bio": "I'm a Senior Full-Stack Developer with over 10 years of experience in development and tech management. Recognized by Google as a Developer Expert in Angular, and Microsoft awarded me as a Most Valuable Professional."
   }
 }
