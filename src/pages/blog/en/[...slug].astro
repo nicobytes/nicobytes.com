@@ -6,10 +6,16 @@ import Code from "@components/mdx/Code.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: post,
-  }));
+  return posts.map((post) => {
+    const [lang, ...slug] = post.slug.split('/');
+    return {
+      params: {
+        lang,
+        slug: slug.join('/'),
+      },
+      props: post,
+    };
+  });
 }
 type Props = CollectionEntry<"blog">;
 

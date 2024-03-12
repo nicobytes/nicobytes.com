@@ -1,0 +1,42 @@
+---
+import Base from "@layouts/Base.astro";
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "@components/FormattedDate.astro";
+import CalendarIcon from "@icons/CalendarIcon.astro";
+import CategoryIcon from "@icons/CategoryIcon.astro";
+import { Image } from "astro:assets";
+import config from "@config/config.json";
+import { slugify } from "@utils/slug";
+
+type Props = CollectionEntry<"portfolio">["data"];
+
+const { title, image, description } = Astro.props;
+---
+
+<Base meta_title={title} description={description} image={image} hideHero hideVideos>
+  <article>
+    <div class="rounded-lg block overflow-hidden mb-8">
+      {
+        image && (
+          <figure class="w-auto h-auto md:h-[480px] object-cover">
+            <Image
+              class="transition duration-300 ease-in-out hover:scale-110"
+              src={image}
+              alt={title}
+              width={960}
+              height={480}
+              decoding="async"
+              loading="lazy"
+            />
+          </figure>
+        )
+      }
+    </div>
+    <div class="md:col-10 text-center mb-12">
+      <h1 class="text-2xl md:text-4xl font-bold">{title}</h1>
+    </div>
+    <div class="prose prose-green prose-md md:prose-lg min-w-full">
+      <slot />
+    </div>
+  </article>
+</Base>

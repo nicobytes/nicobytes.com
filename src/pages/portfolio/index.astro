@@ -1,0 +1,38 @@
+---
+import Base from '@layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const portfolio = await getCollection('portfolio');
+---
+
+<Base hideHero>
+  <div
+    class="flex flex-col items-center gap-8 pb-10 pt-8 sm:px-4 sm:pb-12 md:gap-10 md:pb-16 lg:gap-12 lg:px-8 lg:pb-20 lg:pt-10 xl:px-10"
+  >
+    <section class="flex flex-col gap-4 lg:gap-6">
+      <div class="grid w-full max-w-screen-2xl gap-8 sm:grid-cols-2 lg:gap-10 xl:grid-cols-3">
+        {
+          portfolio.map((project) => (
+            <a class="flex h-full flex-col " href={`/portfolio/${project.slug}`} data-astro-prefetch>
+              <article class="relative flex min-w-0 flex-col transition-transform duration-300 ease-out hover:scale-[1.03]">
+                <img
+                  src={project.data.image}
+                  width={500}
+                  height={500}
+                  alt=""
+                  class="aspect-video w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="flex flex-1 flex-col p-6 text-left bg-zinc-50 dark:bg-zinc-900">
+                  <h3 class="heading-5 mb-2 text-white font-bold">{project.data.title}</h3>
+                  <p class="line-clamp-3">{project.data.description}</p>
+                </div>
+              </article>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</Base>

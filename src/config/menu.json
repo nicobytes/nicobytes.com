@@ -2,15 +2,23 @@
   "main": [
     {
       "name": "Home",
-      "url": "/"
+      "url": "/",
+      "external": false
     },
     {
       "name": "Blog",
-      "url": "/blog"
+      "url": "/blog/en",
+      "external": false
     },
     {
-      "name": "Portofolio",
-      "url": "/categories/portofolio"
+      "name": "Portfolio",
+      "url": "/portfolio",
+      "external": false
+    },
+    {
+      "name": "Courses",
+      "url": "https://platzi.com/teachers/nicobytes",
+      "external": true
     }
   ]
 }

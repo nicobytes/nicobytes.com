@@ -14,7 +14,7 @@ const { title, description, pubDate, heroImage, categories, tags } =
   Astro.props;
 ---
 
-<Base meta_title={title} description={description} image={heroImage} blogpost>
+<Base meta_title={title} description={description} image={heroImage} hideHero hideVideos>
   <article>
     <div class="rounded-lg block overflow-hidden mb-8">
       {
