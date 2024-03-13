@@ -100,13 +100,12 @@ const ogImage = createOgImage({
     <meta name="twitter:card" content="summary_large_image" />
 
     <script is:inline src="/registerSW.js"></script>
-    <link rel="manifest" href="/manifest.webmanifest" />
     <ViewTransitions />
   </head>
   <body class="bg-white dark:bg-zinc-900/95">
     <Header />
     {!hideHero && <Hero />}
-    <main class="mx-auto max-w-screen-lg px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <main id="content" class="mx-auto max-w-screen-lg px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <slot />
     </main>
     {!hideVideos && config.features.youtube && <FeaturedVideos />}

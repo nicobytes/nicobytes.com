@@ -18,7 +18,7 @@ import youtube from "@config/youtube.json";
           <a
             href={`https://www.youtube.com/watch?v=${item.videoId}`}
             target="_blank"
-            class="relative top-0 block overflow-hidden rounded-2xl"
+            class="relative top-0 block overflow-hidden"
           >
             <figure>
               <Image
@@ -32,8 +32,7 @@ import youtube from "@config/youtube.json";
               />
             </figure>
             <div class="bg-zinc-900 p-4">
-              <span class="text-sm">{item.channelTitle}</span>
-              <p class="mt-1 text-xs text-zinc-400 h-8">{item.title}</p>
+              <p class="text-xs text-zinc-400 h-8">{item.title}</p>
             </div>
           </a>
         </li>

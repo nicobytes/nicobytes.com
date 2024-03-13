@@ -1,6 +1,7 @@
 ---
 import Project from "@layouts/Project.astro";
 import { getCollection, type CollectionEntry } from "astro:content"
+import Code from "@components/mdx/Code.astro";
 
 export async function getStaticPaths() {
 	const portfolio = await getCollection("portfolio")
@@ -14,9 +15,9 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props as { project: CollectionEntry<"portfolio"> }
-
+const { Content } = await project.render();
 ---
 
 <Project {...project.data}>
-  <h1>{project.data.title}</h1>
+  <Content components={{ pre: Code }} />
 </Project>
