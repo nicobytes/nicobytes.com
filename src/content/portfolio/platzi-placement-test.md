@@ -32,5 +32,5 @@ When the exam is finished, the user can see the results, and according to the st
 
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
-  <Image src="/portfolio/placement_test_route.jpg" alt="classes" width="960" height="540" decoding="async" loading="lazy" />
+  <Image src="/portfolio/placement_test_lp.jpg" alt="classes" width="960" height="540" decoding="async" loading="lazy" />
 </figure>
