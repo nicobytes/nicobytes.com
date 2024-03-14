@@ -99,7 +99,6 @@ const ogImage = createOgImage({
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <script is:inline src="/registerSW.js"></script>
     <ViewTransitions />
     <!-- Google tag (gtag.js) -->
     <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-PDZ061BP8E"></script>
@@ -119,9 +118,5 @@ const ogImage = createOgImage({
     </main>
     {!hideVideos && config.features.youtube && <FeaturedVideos />}
     <Footer />
-    <script>
-      // This is a hack to get vite-plugin-pwa to generate a sw.js file.
-      // Do not remove this script tag.
-    </script>
   </body>
 </html>
