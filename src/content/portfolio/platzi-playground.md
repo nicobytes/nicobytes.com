@@ -21,7 +21,7 @@ I used <a href="https://pyodide.org/en/stable/" target="_blank">Pyodide</a>, a W
 
 ### SQL with WebAssembly
 
-To run SQL in the browser, we reuse Pyodide, the Python runner created above, and using <a href="https://docs.python.org/3/library/sqlite3.html" target="_blank">Pyodide</a> with Python, we can run SQL challenges directly in the browser and execute SQL instructions such as INSERT, SELECT, JOIN, UPDATES, etc. In some cases, the challenges are pre-loaded with a dataset so that the student can use this data and build queries to solve the challenge. Finally, to check the student's answer, the app runs unit tests to validate the expected data.
+To run SQL in the browser, we reuse Pyodide, the runner created above, and using <a href="https://docs.python.org/3/library/sqlite3.html" target="_blank">sqlite3</a> with Python, we can run SQL challenges directly in the browser and execute SQL instructions such as INSERT, SELECT, JOIN, UPDATES, etc. In some cases, the challenges are pre-loaded with a dataset so that the student can use this data and build queries to solve the challenge. Finally, to check the student's answer, the app runs unit tests to validate the expected data.
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
   <Image src="/portfolio/playground_sql.jpg" alt="classes" width="960" height="540" decoding="async" loading="lazy" />
@@ -29,7 +29,7 @@ To run SQL in the browser, we reuse Pyodide, the Python runner created above, an
 
 ### JavaScript with Sandpack
 
-To run JavaScript in the browser safely, I used <a href="https://sandpack.codesandbox.io/docs" target="_blank">Sandpack</a> by Condesanbox. Sandpack is a component toolkit for creating live-running code editing experiences and allows you to run a whole JavaScript ecosystem, including libraries, in this same environment to run unit tests with <a href="https://jestjs.io/" target="_blank">Jest</a> to validate that the student answer was correct.
+To run JavaScript in the browser safely, I used <a href="https://sandpack.codesandbox.io/docs" target="_blank">Sandpack</a> by Condesanbox. Sandpack is a component toolkit for creating live-running code editing experiences and allows you to run a whole JavaScript ecosystem, including libraries, in this same environment the unit tests are run with <a href="https://jestjs.io/" target="_blank">Jest</a> to validate that the student answer was correct.
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
   <Image src="/portfolio/playground_js.jpg" alt="themes" width="960" height="540" decoding="async" loading="lazy" />
@@ -37,9 +37,6 @@ To run JavaScript in the browser safely, I used <a href="https://sandpack.codesa
 
 
 
-### Stack:
+### The Stack
 
-- React
-- NextJS
-- TypeScript
-- TailwindCSS
+The app uses NextJS/React and Tailwind CSS for the frontend, and Pyodide and Sandpack to run Python, SQL, and JavaScript safely in the browser.
