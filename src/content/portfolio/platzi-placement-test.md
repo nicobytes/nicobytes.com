@@ -27,7 +27,9 @@ An important skill to check is speaking, and this skill was assessed using the u
 
 ### Recommendations based on student's answers
 
-When the exam is finished, the user can see the results, and according to the student's answers, the app recommends a learning path according to the level.
+When the exam is finished, the user can see the results, and according to the student's answers, the app recommends a learning path according to the level. That learning path is <a href="https://platzi.com/ada-skills/evoluciona/?id=g1710428380-c90c3b1a-6d39-4c6e-a258-e4cfc890adc6" target="_blank">shareable </a> on social networks, and it is possible to save it in your profile to continue learning.
+
+
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
   <Image src="/portfolio/placement_test_route.jpg" alt="classes" width="960" height="540" decoding="async" loading="lazy" />
