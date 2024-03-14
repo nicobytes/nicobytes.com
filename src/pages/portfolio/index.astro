@@ -14,7 +14,7 @@ const publicProjects = await getCollection('portfolio', ({ data }) => {
 const publicItems = publicProjects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Base hideHero>
+<Base hideHero meta_title='Porfolio'>
   <section class="grid w-full max-w-screen-2xl gap-8 sm:grid-cols-2 lg:gap-10 xl:grid-cols-3">
     {
       privateItems.map((project) => (
