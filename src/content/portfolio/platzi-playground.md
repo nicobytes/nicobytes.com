@@ -3,7 +3,7 @@ pubDate: '2023-12-28'
 title: "Platzi Coding Playground"
 description: "An online environment with the capability to run Python, SQL, and JavaScript safely in the browser"
 image: "/portfolio/playground.jpg"
-url: "https://creativedesignsguru.com/demo/astro-boilerplate/"
+url: "https://jshero.platzi.com/e/sql/dbfundamentos-select?embed=true&course=Curso+de+Fundamentos+de+Bases+de+Datos&courseId=1566"
 type: "private"
 ---
 
