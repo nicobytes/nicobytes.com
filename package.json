@@ -66,6 +66,7 @@
     "astro-compress/sharp": "0.33.1"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.0.4",
     "astro-compressor": "^0.4.1"
   }
 }

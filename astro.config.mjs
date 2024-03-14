@@ -1,18 +1,23 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
-import compressor from "astro-compressor";
+import compressor from 'astro-compressor';
 import sitemap from '@astrojs/sitemap';
 import robotsTxt from 'astro-robots-txt';
 import { VitePWA } from 'vite-plugin-pwa';
-
 import { manifest } from './src/utils/manifest';
+
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4322/',
+  site: 'https://nicobytes.com/',
   image: {
-    remotePatterns: [{ protocol: 'https' }],
+    remotePatterns: [
+      {
+        protocol: 'https',
+      },
+    ],
   },
   markdown: {
     drafts: true,
@@ -30,10 +35,18 @@ export default defineConfig({
       },
       drafts: true,
     }),
-    compressor({ gzip: true, brotli: true }),
+    compressor({
+      gzip: true,
+      brotli: true,
+    }),
     sitemap(),
     tailwind(),
     robotsTxt(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
   ],
   vite: {
     plugins: [
