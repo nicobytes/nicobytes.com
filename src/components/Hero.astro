@@ -6,7 +6,7 @@ import social from '@config/social';
 const socialItems = social.networks;
 ---
 
-<section class="bg-zinc-50 dark:bg-zinc-900">
+<section class="bg-zinc-300 dark:bg-zinc-900">
   <div class="mx-auto max-w-screen-lg px-4 py-0 pb-6 sm:px-6 sm:pb-12 lg:px-8">
     <div class="flex flex-col md:flex-row-reverse items-start justify-between">
       <div class="w-full md:w-auto rounded-lg">
@@ -26,7 +26,7 @@ const socialItems = social.networks;
         <h1 class="mb-0 text-lg font-bold text-zinc-900 sm:text-3xl md:text-2xl dark:text-white">
           {config.author.name}
         </h1>
-        <p class="mt-1.5 text-sm text-zinc-500 md:text-lg dark:text-zinc-400">
+        <p class="mt-1.5 text-sm text-zinc-900 md:text-lg dark:text-zinc-400">
           I am a Senior Full-Stack Developer with more than 10 years of experience in development and technology
           management. Recognized by Google as an <a
             class="underline underline-offset-2"
@@ -42,7 +42,7 @@ const socialItems = social.networks;
         <div class="m-auto flex space-x-5 pt-8">
           {
             socialItems?.map((item) => (
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
+              <a href={item.url} class="text-zinc-900" target="_blank" rel="noopener noreferrer">
                 <figure>
                   <Fragment set:html={item.svg} />
                 </figure>

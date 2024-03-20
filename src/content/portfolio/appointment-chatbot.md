@@ -18,7 +18,7 @@ Using <a href="https://www.twilio.com/docs/whatsapp/quickstart/node" target="_bl
 
 ### Monitoring conversations
 
-To monitor the conversations, I used <a href="https://www.couchbase.com/" target="_blank">Couchbase</a> a NoSQL database that allows me store a lot of data to eventually run queries to analyze the conversations to get insights. Then, by creating an API with NodeJS and GraphQL we enabled this service to be consumed from an Angular app. Finally, using <a href="https://swimlane.github.io/ngx-charts" target="_blank">ngx-charts</a> we created a dashboard to visualize the data.
+To monitor the conversations, I used <a href="https://www.couchbase.com/" target="_blank">Couchbase</a> a NoSQL database that allows me to store a lot of data to eventually run queries to analyze the conversations to get insights. Then, by creating an API with NodeJS and GraphQL we enabled this service to be consumed from an Angular app. Finally, using <a href="https://swimlane.github.io/ngx-charts" target="_blank">ngx-charts</a> we created a dashboard to visualize the data.
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
   <Image src="/portfolio/chatbot_conversations.jpg" alt="mardown" width="960" height="540" decoding="async" loading="lazy" />
@@ -29,7 +29,7 @@ To monitor the conversations, I used <a href="https://www.couchbase.com/" target
 In this project was important to measure the satisfaction of the users, so when the user goal is achieved, the chatbot sends a last message asking for a score to rate the attention, and this score is monitored on a dashboard.
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
-  <Image src="/portfolio/chatbot_calidad.jpg" alt="mardown" width="960" height="540" decoding="async" loading="lazy" />
+  <Image src="/portfolio/chatbot_score.jpg" alt="mardown" width="960" height="540" decoding="async" loading="lazy" />
 </figure>
 
 ### PWA and responsive design
