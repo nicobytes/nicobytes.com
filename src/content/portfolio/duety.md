@@ -18,7 +18,7 @@ This app was created for couples and designed with a custom UI to engage the use
 
 ### Challenging UX/UI
 
-Within the app, there were a lot of activities for couples, with a lot of sections to do and ask something. In this part, I created reusable cards and used Angular Reactive Forms to control all input validations in the app.
+Within the app, there were a lot of activities for couples, with a lot of sections to do and ask something. In this part, I created reusable cards and used <a href="https://angular.dev/guide/forms/form-validation#validating-input-in-reactive-forms" target="_blank">Angular Reactive Forms</a> to control all input validations in the app.
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
   <Image src="/portfolio/duety_screenshots.jpg" alt="mardown" width="960" height="540" decoding="async" loading="lazy" />
@@ -26,4 +26,5 @@ Within the app, there were a lot of activities for couples, with a lot of sectio
 
 ### The stack
 
-The app was built with Ionic, Cordova, and Angular, and used a lot of custom sytles using Sass.
+The app was built with <a href="https://ionicframework.com/" target="_blank">Ionic</a>, Cordova, and Angular, and used a lot of custom sytles using Sass.
+
