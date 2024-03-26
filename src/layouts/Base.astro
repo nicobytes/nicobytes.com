@@ -22,7 +22,7 @@ export interface Props {
 
 const { title, meta_title, description, noindex, hideHero, hideVideos, image } = Astro.props;
 
-const metaImage = image ?? '/og_image.jpg';
+const metaImage = `${Astro.site}${image ?? 'og_image.jpg'}`;
 ---
 
 <!doctype html>
