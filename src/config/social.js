@@ -25,5 +25,10 @@ export default {
       url: 'https://x.com/nicobytes',
       icon: 'logo-twitter',
     },
+    {
+      name: 'CV',
+      url: '/Nicolas_Molina_CV.pdf',
+      icon: 'document-sharp',
+    },
   ],
 };
