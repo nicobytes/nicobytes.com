@@ -20,6 +20,7 @@ const { page } = Astro.props;
 ---
 
 <Base meta_title="Blog" hideHero>
+
   <Posts posts={page.data} />
   <Pagination
     length={page.lastPage}

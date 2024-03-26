@@ -22,10 +22,12 @@ type PostType = {
   };
 };
 ---
+<h2 class="mb-4 text-2xl font-bold">Blog</h2>
 
 <div
   class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
 >
+
   {
     posts?.slice(0, config.site.pageSize).map((post: PostType) => (
       <article class="flex w-full flex-col items-start transition duration-300 ease-in-out hover:scale-110">

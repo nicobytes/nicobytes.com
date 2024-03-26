@@ -14,7 +14,7 @@ const publicProjects = await getCollection('portfolio', ({ data }) => {
 const publicItems = publicProjects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Base meta_title='Porfolio'>
+<Base meta_title='Porfolio' image='/og_porfolio.jpg'>
   <h2 class="mb-4 text-2xl font-bold">Projects</h2>
   <section class="grid w-full max-w-screen-2xl gap-8 sm:grid-cols-2 lg:gap-10 xl:grid-cols-3">
     {
