@@ -2,7 +2,6 @@
 import Base from '@layouts/Base.astro';
 import type { CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
-import ArrowBackIcon from '@icons/ArrowBack.astro';
 
 type Props = CollectionEntry<'portfolio'>['data'];
 
@@ -21,9 +20,9 @@ const { title, image, description, url } = Astro.props;
       }
     </div>
     <div class="min-w-full">
-      <a href="/portfolio" class="my-4 text-base text-indigo-400">
+      <a href="/portfolio" class="my-4 block text-base text-indigo-400">
         <div class="flex items-center space-x-1">
-          <ArrowBackIcon />
+          <ion-icon name="arrow-back-sharp"></ion-icon>
           <span>Back</span>
         </div>
       </a>

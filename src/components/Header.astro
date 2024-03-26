@@ -2,8 +2,6 @@
 import { Image } from 'astro:assets';
 import menu from '@config/menu.json';
 import config from '@config/config.json';
-import HamburgerIcon from '@icons/HamburgerIcon.astro';
-import CloseIcon from '@icons/CloseIcon.astro';
 import ThemeIcon from '@components/ThemeIcon.astro';
 
 export interface NavigationLink {
@@ -53,12 +51,12 @@ const { main }: { main: NavigationLink[] } = menu;
         <label
           id="show-button"
           for="nav-toggle"
-          class="order-2 flex cursor-pointer items-center text-zinc-400 md:hidden"
+          class="order-2 flex cursor-pointer items-center text-zinc-700 dark:text-zinc-200 md:hidden"
         >
-          <HamburgerIcon />
+          <ion-icon name="menu-sharp" size="large"></ion-icon>
         </label>
-        <label id="hide-button" for="nav-toggle" class="order-2 hidden cursor-pointer items-center text-zinc-400">
-          <CloseIcon />
+        <label id="hide-button" for="nav-toggle" class="order-2 hidden cursor-pointer items-center text-zinc-700 dark:text-zinc-200">
+          <ion-icon name="close-sharp" size="large"></ion-icon>
         </label>
         <div
           id="nav-menu"

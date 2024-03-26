@@ -21,6 +21,9 @@
   table * {
     @apply text-zinc-700 dark:text-zinc-300;
   }
+  table {
+    @apply overflow-x-scroll;
+  }
   kbd {
     @apply bg-white text-zinc-700;
   }
@@ -50,27 +53,3 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply block md:flex;
 }
 
-.sun {
-  @apply stroke-zinc-500 transition-all;
-}
-.moon {
-  @apply stroke-transparent transition-all;
-}
-.dark .sun {
-  @apply stroke-transparent;
-}
-.dark .moon {
-  @apply stroke-zinc-400;
-}
-#themeToggle:hover .sun {
-  @apply stroke-zinc-800;
-}
-#themeToggle:hover .moon {
-  @apply stroke-transparent;
-}
-.dark #themeToggle:hover .sun {
-  @apply stroke-transparent;
-}
-.dark #themeToggle:hover .moon {
-  @apply stroke-zinc-200;
-}

@@ -1,7 +1,4 @@
 ---
-import NextIcon from '@icons/NextIcon.astro';
-import PrevIcon from '@icons/PrevIcon.astro';
-
 const { length, currentPage, firstUrl, prevUrl, nextUrl } = Astro.props;
 const paginationList = Array.from({ length }, (_, i) => i + 1);
 ---
@@ -16,7 +13,7 @@ const paginationList = Array.from({ length }, (_, i) => i + 1);
             class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100  text-zinc-900 rtl:rotate-180 dark:text-white"
           >
             <span class="sr-only">Prev Page</span>
-            <PrevIcon />
+            <ion-icon name="chevron-back-sharp"></ion-icon>
           </a>
         </li>
       ) : null
@@ -43,7 +40,7 @@ const paginationList = Array.from({ length }, (_, i) => i + 1);
             class="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 text-zinc-900 rtl:rotate-180 dark:text-white"
           >
             <span class="sr-only">Next Page</span>
-            <NextIcon />
+            <ion-icon name="chevron-forward-sharp"></ion-icon>
           </a>
         </li>
       ) : null

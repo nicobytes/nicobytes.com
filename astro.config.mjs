@@ -19,10 +19,9 @@ export default defineConfig({
     ],
   },
   markdown: {
-    drafts: true,
     shikiConfig: {
       theme: 'material-theme-palenight',
-      wrap: true,
+      wrap: false,
     },
     rehypePlugins: [
       [
@@ -39,9 +38,8 @@ export default defineConfig({
       syntaxHighlight: 'shiki',
       shikiConfig: {
         theme: 'material-theme-palenight',
-        wrap: true,
+        wrap: false,
       },
-      drafts: true,
     }),
     compressor({
       gzip: true,

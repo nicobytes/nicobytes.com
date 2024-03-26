@@ -5,7 +5,7 @@ pubDate: '2024-03-26T00:06:59.246Z'
 heroImage: '/posts/01_whisper.jpg'
 categories: ['AI', 'Python']
 draft: false
-lang: "en"
+lang: 'en'
 # langLink: '/blog/es/como-usar-whisper'
 ---
 
@@ -36,14 +36,17 @@ poetry add openai-whisper
 
 Now that you have Whisper installed, you can create a `main.py` file and import Whisper as a Python package, then load the model you want to use. There are five models sizes offering speed and accuracy tradeoff.
 
-|  Size  | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
-|:------:|:----------:|:------------------:|:------------------:|:-------------:|:--------------:|
-|  tiny  |    39 M    |     `tiny.en`      |       `tiny`       |     ~1 GB     |      ~32x      |
-|  base  |    74 M    |     `base.en`      |       `base`       |     ~1 GB     |      ~16x      |
-| small  |   244 M    |     `small.en`     |      `small`       |     ~2 GB     |      ~6x       |
-| medium |   769 M    |    `medium.en`     |      `medium`      |     ~5 GB     |      ~2x       |
-| large  |   1550 M   |        N/A         |      `large`       |    ~10 GB     |       1x       |
+<div class="w-full overflow-x-auto">
 
+|  Size  | English-only model | Multilingual model | Required VRAM | Relative speed |
+|:------:|:------------------:|:------------------:|:-------------:|:--------------:|
+|  tiny  |     `tiny.en`      |       `tiny`       |     ~1 GB     |      ~32x      |
+|  base  |     `base.en`      |       `base`       |     ~1 GB     |      ~16x      |
+| small  |     `small.en`     |      `small`       |     ~2 GB     |      ~6x       |
+| medium |    `medium.en`     |      `medium`      |     ~5 GB     |      ~2x       |
+| large  |        N/A         |      `large`       |    ~10 GB     |       1x       |
+
+</div>
 
 Here is the code in `main.py` to use Whisper with Python:
 
@@ -64,7 +67,6 @@ if __name__ == "__main__":
 
 With the `get_transcribe` function you can get the transcription of an audio file, this function has 2 arguments the path and the language. The `path` is the path to the audio file in your environment, if you do not have an audio file to test I recommend you download this file [audio.wav](https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/samples/cpp/windows/console/samples/enrollment_audio_katie.wav) finally `language` is the idiom of audio file, it is possible that Whisper could recognize the audio idiom but for this works better if you define it from the start.
 
-
 ### 4. Running the script
 
 Now in you terminal with the following command, you can run the script:
@@ -84,7 +86,6 @@ poetry add ipykernel
 ```
 
 Now I can create a Jupyter notebook, in this case the file is called `demo.ipyhnb` and use Whisper in the notebook.
-
 
 ### Save results in files
 

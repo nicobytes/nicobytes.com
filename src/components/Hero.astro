@@ -26,7 +26,7 @@ const socialItems = social.networks;
         <h1 class="mb-0 text-lg font-bold text-zinc-900 sm:text-3xl md:text-2xl dark:text-white">
           {config.author.name}
         </h1>
-        <p class="mt-1.5 text-sm text-zinc-900 md:text-lg dark:text-zinc-400">
+        <p class="mt-1.5 text-sm  md:text-lg text-zinc-900 dark:text-zinc-400">
           I am a Senior Full-Stack Developer with more than 10 years of experience in development and technology
           management. Recognized by Google as an <a
             class="underline underline-offset-2"
@@ -42,10 +42,8 @@ const socialItems = social.networks;
         <div class="m-auto flex space-x-5 pt-8">
           {
             socialItems?.map((item) => (
-              <a href={item.url} class="text-zinc-900" target="_blank" rel="noopener noreferrer">
-                <figure>
-                  <Fragment set:html={item.svg} />
-                </figure>
+              <a href={item.url} class="text-zinc-900 text-2xl dark:text-zinc-200" target="_blank" rel="noopener noreferrer">
+                <ion-icon name={item.icon}></ion-icon>
               </a>
             ))
           }
