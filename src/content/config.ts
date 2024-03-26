@@ -22,9 +22,9 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     categories: z.array(z.string()).default(['others']),
     tags: z.array(z.string()).default(['others']),
-    authors: z.array(z.string()).default(['nicobytes']),
 	lang: z.string().default('en'),
 	draft: z.boolean().default(false),
+	langLink: z.string().optional(),
   }),
 });
 

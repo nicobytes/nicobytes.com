@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@astrojs/partytown": "^2.0.4",
-    "astro-compressor": "^0.4.1"
+    "astro-compressor": "^0.4.1",
+    "rehype-external-links": "^3.0.0"
   }
 }

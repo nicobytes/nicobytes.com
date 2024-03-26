@@ -4,6 +4,7 @@ import tailwind from '@astrojs/tailwind';
 import compressor from 'astro-compressor';
 import sitemap from '@astrojs/sitemap';
 import robotsTxt from 'astro-robots-txt';
+import rehypeExternalLinks from 'rehype-external-links';
 
 import partytown from '@astrojs/partytown';
 
@@ -23,6 +24,15 @@ export default defineConfig({
       theme: 'material-theme-palenight',
       wrap: true,
     },
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          target: '_blank',
+          rel: ['noopener', 'noreferrer']
+        }
+      ],
+    ]
   },
   integrations: [
     mdx({

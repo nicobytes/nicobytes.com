@@ -8,6 +8,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            '--tw-prose-headings': 'rgb(var(--color-text-heading))',
             a: {
               'text-decoration': 'none',
               'background-repeat': 'no-repeat',

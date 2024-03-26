@@ -6,6 +6,11 @@
       "external": false
     },
     {
+      "name": "Blog",
+      "url": "/blog/en",
+      "external": false
+    },
+    {
       "name": "Portfolio",
       "url": "/portfolio",
       "external": false

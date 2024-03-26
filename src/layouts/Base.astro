@@ -4,7 +4,6 @@ import Hero from "@components/Hero.astro";
 import FeaturedVideos from "@components/FeaturedVideos.astro";
 import Footer from "@components/Footer.astro";
 import config from "@config/config.json";
-import { createOgImage } from "@utils/createOgImage";
 
 import "@styles/global.css";
 
@@ -21,12 +20,9 @@ export interface Props {
   hideVideos?: boolean;
 }
 
-const { title, meta_title, description, noindex, hideHero, hideVideos } = Astro.props;
+const { title, meta_title, description, noindex, hideHero, hideVideos, image } = Astro.props;
 
-const ogImage = createOgImage({
-  title: meta_title ? meta_title : title ? title : config.site.title,
-  meta: [config.site.title, config.site.base_url].join(" · "),
-});
+const metaImage = image ?? '/og_image.jpg';
 ---
 
 <!doctype html>
@@ -94,9 +90,9 @@ const ogImage = createOgImage({
       content={description ? description : config.metadata.meta_description}
     />
     <!-- og-image -->
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={metaImage} />
     <!-- twitter-image -->
-    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image" content={metaImage} />
     <meta name="twitter:card" content="summary_large_image" />
 
     <ViewTransitions />

@@ -1,13 +1,12 @@
 ---
-title: 'Como usar whisper'
-description: 'Delve into the realm of theoretical physics and the possibilities of traversable wormholes and warp drives.'
-pubDate: '2021-09-19T01:22:34.123Z'
-heroImage: '/blog-placeholder.jpg'
-categories: ['planetary defense']
-tags: ['Asteroid Impact', 'Space Hazards', 'Planetary Defense', 'Impact Events']
-author: '["gndx"]'
+title: 'Como usar Whisper en Python'
+description: 'Whisper is an AI model from OpenAI that allows you to convert any audio to text with high quality and accuracy.'
+pubDate: '2024-03-26T00:06:59.246Z'
+heroImage: '/posts/01_whisper.jpg'
+categories: ['AI', 'Python']
 draft: false
 lang: "es"
+langLink: '/blog/en/how-to-use-whisper/'
 ---
 
 Spanish
