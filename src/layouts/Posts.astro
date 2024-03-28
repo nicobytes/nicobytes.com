@@ -30,7 +30,7 @@ type PostType = {
 
   {
     posts?.slice(0, config.site.pageSize).map((post: PostType) => (
-      <article class="flex w-full flex-col items-start transition duration-300 ease-in-out hover:scale-110">
+      <article class="flex w-full flex-col items-start transition duration-300 ease-in-out hover:scale-[1.03]">
         <div class="block overflow-hidden mb-4">
           {post.data.heroImage && (
             <a href={`/blog/${post.slug}#content`}>
