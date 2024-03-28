@@ -27,7 +27,7 @@ export default {
     },
     {
       name: 'CV',
-      url: '/cv.pdf',
+      url: '/cv_v1.pdf',
       icon: 'document-sharp',
     },
   ],
