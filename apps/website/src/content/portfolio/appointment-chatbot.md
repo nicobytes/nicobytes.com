@@ -10,7 +10,7 @@ A chatbot to manage medical appointments using the Twilio API for WhatsApp. This
 
 ### Integration with WhatsApp
 
-Using [Twilio API](https://www.twilio.com/docs/whatsapp/quickstart/node) for WhatsApp I contributed by creating a chatbot using NodeJS in the backend and [Microsoft Bot Framework](https://dev.botframework.com/) to create conversational AI experiences. I also used <a href="https://www.luis.ai/" target="_blank">Microsoft's LUIS</a> a language understanding service to interpret user goals (intents) and distill valuable information from sentences (entities), such as names, times, dates, identifications, etc. With that data, we created a REST API to handle the booking system and check the availability to finally respond to the user with this information.
+Using [Twilio API](https://www.twilio.com/docs/whatsapp/quickstart/node) for WhatsApp I contributed by creating a chatbot using NodeJS in the backend and [Microsoft Bot Framework](https://dev.botframework.com/) to create conversational AI experiences. I also used [Microsoft's LUIS](https://www.luis.ai/) a language understanding service to interpret user goals (intents) and distill valuable information from sentences (entities), such as names, times, dates, identifications, etc. With that data, we created a REST API to handle the booking system and check the availability to finally respond to the user with this information.
 
 <figure class="h-auto w-auto object-cover md:h-[540px]">
   <Image src="/portfolio/chatbot_whatsapp.jpg" alt="mardown" width="960" height="540" decoding="async" loading="lazy" />
