@@ -35,7 +35,8 @@
     "youtube": "node scripts/youtube.cjs",
     "newpost": "astro-md-generator",
     "format": "prettier -w .",
-    "lint:eslint": "eslint . --ext .js,.ts,.astro"
+    "lint:eslint": "eslint . --ext .js,.ts,.astro",
+    "wrangler:dev": "npm run build && wrangler pages dev ./dist --compatibility-date=2024-03-28"
   },
   "devDependencies": {
     "@astrojs/mdx": "2.0.2",
@@ -58,7 +59,8 @@
     "prettier-plugin-astro": "0.12.2",
     "prettier-plugin-tailwindcss": "0.5.9",
     "tailwindcss": "3.4.0",
-    "typescript": "5.4.2"
+    "typescript": "5.4.2",
+    "wrangler": "^3.39.0"
   },
   "resolutions": {
     "astro/sharp": "0.33.1",

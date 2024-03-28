@@ -1,0 +1,1 @@
+npx wrangler pages project create nicobytes-com
