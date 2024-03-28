@@ -27,7 +27,7 @@ export default {
     },
     {
       name: 'CV',
-      url: '/Nicolas_Molina_CV.pdf',
+      url: '/cv.pdf',
       icon: 'document-sharp',
     },
   ],
