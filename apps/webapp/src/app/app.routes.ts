@@ -22,4 +22,8 @@ export const routes: Routes = [
     path: 'search',
     loadComponent: () => import('./search/search.page')
   },
+  {
+    path: 'gemma',
+    loadComponent: () => import('./gemma/gemma.page')
+  },
 ];

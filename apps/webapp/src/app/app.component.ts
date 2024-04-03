@@ -47,6 +47,7 @@ export class AppComponent {
     { title: 'Code Llama', url: '/chat', icon: 'chatbox' },
     { title: 'Image', url: '/image', icon: 'image' },
     { title: 'Search', url: '/search', icon: 'search' },
+    { title: 'Gemma', url: '/gemma', icon: 'search' },
   ];
   constructor() {
     addIcons({ chatbox, home, image, search });
