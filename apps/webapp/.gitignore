@@ -22,6 +22,7 @@ log.txt
 /www
 /platforms
 /plugins
+/src/assets/models
 
 # Compiled output
 /dist
