@@ -18,15 +18,15 @@ jobs:
         with:
           node-version: 20.x
       - name: Install Dependencies
-        working-directory: ./apps/admin
+        working-directory: ./apps/webapp
         run: npm ci
       - name: Build
-        working-directory: ./apps/admin
+        working-directory: ./apps/webapp
         run: npm run build
       - name: Deploy Page
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          workingDirectory: ./apps/admin
+          workingDirectory: ./apps/webapp
           command: pages deploy ./www/ --project-name=nicobytes-webapp
