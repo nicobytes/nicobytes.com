@@ -60,7 +60,7 @@
     "prettier-plugin-tailwindcss": "0.5.9",
     "tailwindcss": "3.4.0",
     "typescript": "5.4.2",
-    "wrangler": "^3.39.0"
+    "wrangler": "3.46.0"
   },
   "resolutions": {
     "astro/sharp": "0.33.1",
