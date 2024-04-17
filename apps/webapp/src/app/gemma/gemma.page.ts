@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal, OnInit, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormControl } from '@angular/forms';
 import {
   IonHeader,
   IonFooter,
@@ -16,8 +16,19 @@ import {
   IonItem,
   IonInput,
   IonButtons,
-  IonMenuButton
+  IonMenuButton,
+  IonLoading,
 } from '@ionic/angular/standalone';
+import { GemmaService } from '@app/services/gemma.service';
+import { addIcons } from 'ionicons';
+import { send } from 'ionicons/icons';
+import { LoadingController } from '@ionic/angular';
+
+interface Message {
+  id: number;
+  from: 'gemma' | 'user';
+  text: string;
+}
 
 @Component({
   selector: 'app-gemma',
@@ -41,10 +52,42 @@ import {
     IonMenuButton,
     CommonModule,
     ReactiveFormsModule,
+    IonLoading,
   ],
 })
-export default class GemmaPage {
+export default class GemmaPage implements OnInit {
+  gemmaService = inject(GemmaService);
+  loadingCtrl = inject(LoadingController);
+  messages = signal<Message[]>([]);
+  modelLoaded = signal(false);
+  showLoading = signal(false);
+  textareaCtrl = new FormControl('', { nonNullable: true });
 
-  constructor() { }
+  constructor() {
+    addIcons({ send });
+  }
+
+  ngOnInit() {
+    this.loadModel();
+  }
+
+  async loadModel() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Loading Gemma Model...',
+    });
+    loading.present();
+    await this.gemmaService.loadGemmaModel();
+    loading.dismiss();
+  }
+
+  async sendMessage() {
+    const message = this.textareaCtrl.value;
+    this.textareaCtrl.setValue('');
+    this.messages.update((messages) => [...messages, { from: 'user', text: message, id: new Date().getTime() }]);
+    this.showLoading.update((state) => !state);
+    const response = await this.gemmaService.generateResponse(message);
+    this.showLoading.update((state) => !state);
+    this.messages.update((messages) => [...messages, { from: 'gemma', text: response, id: new Date().getTime() }]);
+  }
 
 }

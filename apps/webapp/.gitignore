@@ -22,7 +22,6 @@ log.txt
 /www
 /platforms
 /plugins
-/src/assets/models
 
 # Compiled output
 /dist
@@ -67,3 +66,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+/src/assets/models
