@@ -1,6 +1,6 @@
 ---
 title: 'Responsive Angular Views using defer block'
-description: 'Whisper is an AI model from OpenAI that allows you to convert any audio to text with high quality and accuracy.'
+description: 'Create responsive tables and save kilobytes in the process.'
 pubDate: '2024-04-18T19:56:29.276Z'
 heroImage: '/posts/responsive-views/resposive_table.jpg'
 categories: ['Angular']
