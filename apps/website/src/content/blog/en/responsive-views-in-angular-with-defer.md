@@ -2,7 +2,7 @@
 title: 'Responsive Angular Views using defer block'
 description: 'Create responsive tables and save kilobytes in the process.'
 pubDate: '2024-04-18T19:56:29.276Z'
-heroImage: '/posts/responsive-views/resposive_table.jpg'
+heroImage: '/posts/responsive-views/og.jpg'
 categories: ['Angular']
 draft: false
 lang: 'en'
