@@ -79,16 +79,14 @@ But in this case, you actually load both components and just hide them from the 
 With this approach, it is possible to use the new defer block to save bytes and load the component only when needed. With this code:
 
 ```html
-@defer (when isMobile()) {
-  <app-list [products]="products()" />
-} @loading {
-  <p>loading</p>
-}
-
-@defer (when !isMobile()) {
-  <app-table [products]="products()" />
-} @loading {
-  <p>loading</p>
+@if (isMobile()) {
+  @defer {
+    <app-list [products]="products()" />
+  }
+} @else {
+  @defer {
+    <app-table [products]="products()" />
+  }
 }
 ```
 
