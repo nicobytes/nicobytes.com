@@ -67,17 +67,15 @@ export default class GemmaPage implements OnInit {
     addIcons({ send });
   }
 
-  ngOnInit() {
-    this.loadModel();
+  async ngOnInit() {
+    console.log('init');
+    await this.loadModel();
   }
 
   async loadModel() {
-    const loading = await this.loadingCtrl.create({
-      message: 'Loading Gemma Model...',
-    });
-    loading.present();
+    this.showLoading.update((state) => !state);
     await this.gemmaService.loadGemmaModel();
-    loading.dismiss();
+    this.showLoading.update((state) => !state);
   }
 
   async sendMessage() {

@@ -11,12 +11,15 @@ export class GemmaService {
   constructor() { }
 
   async loadGemmaModel() {
+    console.log('loading model');
     const genai = await FilesetResolver.forGenAiTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai/wasm");
+    console.log('genai');
     this.llmInference = await LlmInference.createFromOptions(genai, {
       baseOptions: {
-        modelAssetPath: '/assets/models/gemma-2b-it-gpu-int4.bin'
+        modelAssetPath: '/assets/models/gemma.bin'
       },
     });
+    console.log('model loaded');
   }
 
   async generateResponse(prompt: string): Promise<string> {

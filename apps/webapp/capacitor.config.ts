@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'ai-ui',
+  appId: 'com.nicobytes.app',
+  appName: 'Nicobytes App',
   webDir: 'www',
   server: {
     androidScheme: 'https'
