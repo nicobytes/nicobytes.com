@@ -12,12 +12,15 @@ export class GemmaService {
 
   async loadGemmaModel() {
     console.log('loading model');
-    const genai = await FilesetResolver.forGenAiTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai/wasm");
-    console.log('genai');
+    const genai = await FilesetResolver.forGenAiTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@latest/wasm");
     this.llmInference = await LlmInference.createFromOptions(genai, {
       baseOptions: {
-        modelAssetPath: '/assets/models/gemma.bin'
+        modelAssetPath: '/assets/models/gemma-2b-it-gpu-int4.bin'
       },
+      maxTokens: 1000,
+      topK: 40,
+      temperature: 0.8,
+      randomSeed: 101
     });
     console.log('model loaded');
   }

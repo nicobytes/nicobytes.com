@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "android": "npm run build && cap sync && cap open android"
+    "build:android": "npm run build && cap sync && cap open android"
   },
   "private": true,
   "dependencies": {
@@ -29,7 +29,7 @@
     "@capacitor/keyboard": "^6.0.0",
     "@capacitor/status-bar": "^6.0.0",
     "@ionic/angular": "8.0.0",
-    "@mediapipe/tasks-genai": "0.10.12",
+    "@mediapipe/tasks-genai": "^0.10.14",
     "ionicons": "7.2.1",
     "rxjs": "7.8.0",
     "tslib": "2.3.0",
