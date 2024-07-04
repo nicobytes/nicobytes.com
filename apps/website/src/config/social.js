@@ -24,6 +24,11 @@ export default {
       name: 'x',
       url: 'https://x.com/nicobytes',
       icon: 'logo-twitter',
+    },
+    {
+      name: 'Discord',
+      url: 'https://discord.gg/6tHdeJPB4x',
+      icon: 'logo-discord',
     }
   ],
 };
