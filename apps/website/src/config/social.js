@@ -25,10 +25,10 @@ export default {
       url: 'https://x.com/nicobytes',
       icon: 'logo-twitter',
     },
-    {
-      name: 'CV',
-      url: '/cv_v1.pdf',
-      icon: 'document-sharp',
-    },
+    // {
+    //   name: 'CV',
+    //   url: '/cv_v1.pdf',
+    //   icon: 'document-sharp',
+    // },
   ],
 };
