@@ -21,6 +21,7 @@ export class GemmaService {
       temperature: 0.8,
       randomSeed: 101
     });
+    console.log('model loaded');
   }
 
   async generateResponse(prompt: string): Promise<string> {

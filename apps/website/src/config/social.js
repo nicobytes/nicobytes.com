@@ -30,5 +30,10 @@ export default {
     //   url: '/cv_v1.pdf',
     //   icon: 'document-sharp',
     // },
+    {
+      name: 'Discord',
+      url: 'https://discord.gg/6tHdeJPB4x',
+      icon: 'logo-discord',
+    }
   ],
 };
