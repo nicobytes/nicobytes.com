@@ -39,7 +39,7 @@
     "wrangler:dev": "npm run build && wrangler pages dev ./dist --compatibility-date=2024-03-28"
   },
   "devDependencies": {
-    "@astrojs/mdx": "3.1.2",
+    "@astrojs/mdx": "^3.1.5",
     "@astrojs/rss": "4.0.7",
     "@astrojs/sitemap": "3.1.6",
     "@astrojs/tailwind": "5.1.0",
@@ -47,7 +47,7 @@
     "@tailwindcss/typography": "0.5.10",
     "@typescript-eslint/eslint-plugin": "6.15.0",
     "@typescript-eslint/parser": "6.15.0",
-    "astro": "4.11.5",
+    "astro": "^4.15.2",
     "astro-md-generator": "1.0.0",
     "astro-robots-txt": "1.0.0",
     "dotenv": "16.3.1",
@@ -67,8 +67,9 @@
     "astro-compress/sharp": "0.33.1"
   },
   "dependencies": {
-    "@astrojs/partytown": "2.1.1",
+    "@astrojs/partytown": "^2.1.2",
     "astro-compressor": "0.4.1",
+    "astro-embed": "^0.7.2",
     "rehype-external-links": "3.0.0",
     "sharp": "^0.33.4"
   },

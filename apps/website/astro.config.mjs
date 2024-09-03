@@ -20,7 +20,7 @@ export default defineConfig({
   },
   markdown: {
     shikiConfig: {
-      theme: 'material-theme-palenight',
+      theme: 'night-owl',
       wrap: false,
     },
     rehypePlugins: [
@@ -35,11 +35,7 @@ export default defineConfig({
   },
   integrations: [
     mdx({
-      syntaxHighlight: 'shiki',
-      shikiConfig: {
-        theme: 'material-theme-palenight',
-        wrap: false,
-      },
+      gfm: false,
     }),
     compressor({
       gzip: true,

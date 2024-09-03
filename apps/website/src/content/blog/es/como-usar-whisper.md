@@ -4,7 +4,7 @@ description: 'Whisper is an AI model from OpenAI that allows you to convert any 
 pubDate: '2024-03-26T00:06:59.246Z'
 heroImage: '/posts/01_whisper.jpg'
 categories: ['AI', 'Python']
-draft: false
+draft: true
 lang: "es"
 langLink: '/blog/en/how-to-use-whisper/'
 ---
