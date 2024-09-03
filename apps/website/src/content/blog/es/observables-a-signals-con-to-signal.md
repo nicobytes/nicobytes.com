@@ -2,7 +2,7 @@
 title: 'Observables a Signals con toSignal en Angular'
 description: 'Whisper is an AI model from OpenAI that allows you to convert any audio to text with high quality and accuracy.'
 pubDate: '2024-09-03T00:06:59.246Z'
-heroImage: '/posts/observables-to-signals/cover.jpg'
+heroImage: '/posts/observables-to-signals/coverv2.jpg'
 categories: ['Angular', 'Rxjs', 'Signals']
 draft: false
 lang: "es"
