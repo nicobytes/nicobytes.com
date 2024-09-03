@@ -4,7 +4,7 @@ description: 'Create responsive tables and save kilobytes in the process.'
 pubDate: '2024-04-18T19:56:29.276Z'
 heroImage: '/posts/responsive-views/og.jpg'
 categories: ['Angular']
-draft: false
+draft: true
 lang: 'en'
 # langLink: '/blog/es/como-usar-whisper'
 repoLink: https://github.com/nicobytes/ecommerce-full-stack/tree/resposive-tables/apps/admin

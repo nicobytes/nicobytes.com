@@ -68,7 +68,6 @@ export default class GemmaPage implements OnInit {
   }
 
   async ngOnInit() {
-    console.log('init');
     await this.loadModel();
   }
 
