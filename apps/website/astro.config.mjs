@@ -19,10 +19,6 @@ export default defineConfig({
     ],
   },
   markdown: {
-    shikiConfig: {
-      theme: 'night-owl',
-      wrap: false,
-    },
     rehypePlugins: [
       [
         rehypeExternalLinks,
@@ -35,6 +31,10 @@ export default defineConfig({
   },
   integrations: [
     mdx({
+      shikiConfig: {
+        theme: 'night-owl',
+        wrap: false,
+      },
       gfm: false,
     }),
     compressor({
