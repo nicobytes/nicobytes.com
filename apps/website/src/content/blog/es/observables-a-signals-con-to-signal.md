@@ -2,7 +2,7 @@
 title: 'Observables a Signals con toSignal en Angular'
 description: 'Usando la función toSignal puedes transformar observables en signals, simplificando la transición y reutilizando código existente.'
 pubDate: '2024-09-03T00:06:59.246Z'
-heroImage: '/posts/observables-to-signals/coverv2.jpg'
+heroImage: '/posts/observables-to-signals/79-blog.jpg'
 categories: ['Angular', 'Rxjs', 'Signals']
 draft: false
 lang: "es"
