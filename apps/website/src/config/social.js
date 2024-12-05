@@ -34,6 +34,11 @@ export default {
       name: 'Discord',
       url: 'https://discord.gg/6tHdeJPB4x',
       icon: 'logo-discord',
+    },
+    {
+      name: 'Twitch',
+      url: 'https://twitch.tv/nicobytes',
+      icon: 'logo-twitch',
     }
   ],
 };

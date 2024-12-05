@@ -49,5 +49,11 @@ export default defineConfig({
         forward: ['dataLayer.push'],
       },
     }),
-  ]
+  ],
+  redirects: [
+    {
+      source: '/discord',
+      destination: 'https://discord.gg/6tHdeJPB4x',
+    },
+  ],
 });
