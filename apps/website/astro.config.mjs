@@ -50,10 +50,7 @@ export default defineConfig({
       },
     }),
   ],
-  redirects: [
-    {
-      source: '/discord',
-      destination: 'https://discord.gg/6tHdeJPB4x',
-    },
-  ],
+  redirects: {
+    '/discord': 'https://discord.gg/6tHdeJPB4x',
+  },
 });
